@@ -38,11 +38,11 @@ features                                  :
 
   - title                                 : Controle sua Caravana
     description                           : Sem internet? Sem problemas! Acesse todos os seus dados a qualquer momento, sem depender de conexão.
-    fontawesome_icon_name                 : gear
+    fontawesome_icon_name                 : cog
     
   - title                                 : Seus passageiros a um clique
     description                           : Adicione, organize e tenha sempre à mão as informações dos seus passageiros.
-    fontawesome_icon_name                 : users-gear
+    fontawesome_icon_name                 : users-cog
 
   - title                                 : Entre em contato sem dor de cabeça
     description                           : Entre em contato facilmente por chamada, SMS, e-mail ou WhatsApp.
