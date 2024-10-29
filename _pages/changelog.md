@@ -9,6 +9,12 @@ Nesta página você pode ver as mudanças feitas em nosso aplicativo, ao longo d
 
 <br>
 
+# **Versio 1.1.1** 
+Melhorias na usabilidade do aplicativo, visando a simplicidade e a eficiência. Nesta versão:
+- Adicionado "pull to refresh" nas listas de Caravana e Passageiro, visando uma melhor experiência quando utilizado sincronizando com iCloud.
+- Remoção do teclado da tela nos formulários quando a tela é movida.
+- Melhorias na interface da tela de Configurações, trazendo ícones para uma melhor experiência.
+
 ### `Primeira versão`
 # **Version 1.0**
 A Ctrlavana chega para revolucionar o modo como você gerencia suas excursões. Com o foco em simplicidade e eficiência, esta versão inicial traz as funcionalidades essenciais para organizar suas viagens com praticidade.
