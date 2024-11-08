@@ -10,7 +10,7 @@ September 16 2024
 # Press Kit
 
 ### Ctrlavana para iPhone
-**Sistema Operacional:** iOS 17.0 ou superior
+**Sistema Operacional:** iOS 16.0 ou superior
 **Compatibilidade:** iPhone
 **Preço:** Gratuito
 

@@ -9,11 +9,20 @@ Nesta página você pode ver as mudanças feitas em nosso aplicativo, ao longo d
 
 <br>
 
+# **Versão 1.1.2**
+Diminuímos a versão necessária do iOS de 17.0 para 16.6!
+Adicionada um fluxo de Onboarding na primeira execução do app para uma breve explicação de suas funcionalidades. Mas também é acessível através da tela de Ajustes!
+Agora, também, as telas de Políticas de Privacidade e Suporte são abertas dentro do app, não mais abrindo uma janela nativa do navegador.
+
+<br>
+
 # **Versio 1.1.1** 
 Melhorias na usabilidade do aplicativo, visando a simplicidade e a eficiência. Nesta versão:
 - Adicionado "pull to refresh" nas listas de Caravana e Passageiro, visando uma melhor experiência quando utilizado sincronizando com iCloud.
 - Remoção do teclado da tela nos formulários quando a tela é movida.
 - Melhorias na interface da tela de Configurações, trazendo ícones para uma melhor experiência.
+ 
+<br>
 
 ### `Primeira versão`
 # **Version 1.0**
