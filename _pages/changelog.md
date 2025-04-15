@@ -9,6 +9,16 @@ Nesta página você pode ver as mudanças feitas em nosso aplicativo, ao longo d
 
 <br>
 
+# **Versão 1.1.3**
+Desculpem a demora, mas cá está uma versão focada em usabilidade!
+Mudamos a lista de Caravanas. Agora, você tem um foco maior na imagem e mais espaço entre elas. Nunca é legal ter que apertar os olhos para enxergar algo, não é mesmo?
+E também temos a foto de seu passageiro tanto na listagem de Passageiros, quanto na tela de detalhes da sua Caravana.
+Além disso, alguns bugs foram corrigidos para melhorar a usabilidade do app.
+
+Em breve teremos mais!
+
+<br>
+
 # **Versão 1.1.2**
 Diminuímos a versão necessária do iOS de 17.0 para 16.6!
 Adicionada um fluxo de Onboarding na primeira execução do app para uma breve explicação de suas funcionalidades. Mas também é acessível através da tela de Ajustes!
