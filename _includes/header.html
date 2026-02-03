@@ -1,3 +1,14 @@
+{% assign current_lang = include.lang | default: page.lang | default: site.default_lang %}
+{% assign t = include.t | default: site.data.i18n[current_lang] %}
+{% assign app_name = t.app_name | default: site.app_name %}
+{% assign home_url = '/' %}
+{% if current_lang != site.default_lang %}
+	{% assign home_url = '/' | append: current_lang | append: '/' %}
+{% endif %}
+{% assign is_home = page.translation_key == 'home' %}
+{% assign nav_pages = site.pages | where: "lang", current_lang | where: "include_in_header", true %}
+{% assign translation_key = page.translation_key | default: 'home' %}
+
 <header>
 	<div class="logo">
 		<div class="appIconShadow">
@@ -8,25 +19,46 @@
 					</clipPath>
 				</defs>
 			</svg>
-			{% if page.url != '/' %}
-				<a href="../" target="_self"><img class="headerIcon" src="{{ site.app_icon | relative_url }}"></a>
-			{% else %}
+			{% if is_home %}
 				<img class="headerIcon" src="{{ site.app_icon | relative_url }}">
+			{% else %}
+				<a href="{{ home_url | relative_url }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | relative_url }}"></a>
 			{% endif %}
 			<div class="divider"></div>
 		</div>
-		<p class="headerName">{{ site.app_name }}</p>
+		<p class="headerName">{{ app_name }}</p>
 	</div>
 	<nav class="scroll">
 		<ul>
-			{% for page in site.pages %}
-				{% if page.include_in_header == true %}
-				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
-				{% endif %}
+			{% for nav_page in nav_pages %}
+				<li><a href="{{ nav_page.url | relative_url }}" target="_self">{{ nav_page.title }}</a></li>
 			{% endfor %}
 			{% if site.presskit_download_link %}
-				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
+				<li><a href="{{ site.presskit_download_link }}">{{ t.strings.press_kit | default: "Press Kit" }}</a></li>
 			{% endif %}
+			<li class="langDivider" aria-hidden="true">|</li>
+			<li class="langSwitch">
+				{% for lang in site.languages %}
+					{% assign lang_url = nil %}
+					{% if translation_key == "home" %}
+						{% assign lang_url = "/" %}
+						{% if lang != site.default_lang %}
+							{% assign lang_url = "/" | append: lang | append: "/" %}
+						{% endif %}
+					{% else %}
+						{% assign lang_page = site.pages | where: "translation_key", translation_key | where: "lang", lang | first %}
+						{% if lang_page %}
+							{% assign lang_url = lang_page.url %}
+						{% endif %}
+					{% endif %}
+					{% if lang_url %}
+						{% assign lang_data = site.data.i18n[lang] %}
+						<a href="{{ lang_url | relative_url }}" target="_self" class="{% if lang == current_lang %}active{% endif %}">
+							{{ lang_data.short | default: lang | upcase }}
+						</a>
+					{% endif %}
+				{% endfor %}
+			</li>
 		</ul>
 	</nav>
 </header>

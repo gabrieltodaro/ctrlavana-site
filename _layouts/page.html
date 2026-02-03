@@ -2,15 +2,19 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-<!DOCTYPE html>
-<html lang="en-us">
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+{% assign html_lang = t.lang_code | default: lang %}
 
-{% include head.html %}
+<!DOCTYPE html>
+<html lang="{{ html_lang }}">
+
+{% include head.html lang=lang t=t %}
 
 <body class="subPageBody">
     <div class="headerBackground subPageHeaderBackground">
         <div class="container subPageContainer">
-        {% include header.html %}
+        {% include header.html lang=lang t=t %}
             <article class="page markdown-body">
                 {{ content }}
             </article>

@@ -2,6 +2,8 @@
 layout: page
 title: O que há de novo
 include_in_header: true
+lang: pt
+translation_key: changelog
 ---
 
 # Changelog

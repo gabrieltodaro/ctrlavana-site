@@ -2,6 +2,8 @@
 layout: page
 title: Suporte
 include_in_header: true
+lang: pt
+translation_key: support
 ---
 
 # Suporte

@@ -1,6 +1,10 @@
+{% assign lang = include.lang | default: page.lang | default: site.default_lang %}
+{% assign t = include.t | default: site.data.i18n[lang] %}
+{% assign features = t.features | default: site.features %}
+
 <div class="features">
 
-    {% for feature in site.features %}
+    {% for feature in features %}
 
     {% if feature.title %}
     <div class="feature">

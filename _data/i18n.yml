@@ -1,0 +1,37 @@
+pt:
+  label: "Português"
+  short: "PT"
+  lang_code: "pt-BR"
+  strings:
+    made_by: "Feito por"
+    in: "em"
+    press_kit: "Kit de Imprensa"
+    language: "Idioma"
+
+en:
+  label: "English"
+  short: "EN"
+  lang_code: "en-US"
+  app_name: "Ctrlavana"
+  app_description: "Simplified tour management."
+  strings:
+    made_by: "Made by"
+    in: "in"
+    press_kit: "Press Kit"
+    language: "Language"
+  features:
+    - title: "Manage your caravan"
+      description: "No internet? No problem. Access all your data anytime without relying on a connection."
+      fontawesome_icon_name: "cog"
+    - title: "Passengers in one tap"
+      description: "Add, organize, and always keep your passengers' info at hand."
+      fontawesome_icon_name: "users-cog"
+    - title: "Reach out with no hassle"
+      description: "Contact easily via call, SMS, email, or WhatsApp."
+      fontawesome_icon_name: "envelope"
+    - title: "Departure and arrival locations"
+      description: "Set your caravan's departure and arrival points in just a few taps."
+      fontawesome_icon_name: "map-pin"
+    - title: "iCloud integration"
+      description: "Sync your caravans with iCloud for seamless access across all your devices."
+      fontawesome_icon_name: "sync"

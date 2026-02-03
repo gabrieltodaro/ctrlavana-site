@@ -1,15 +1,13 @@
 ---
 layout: page
-title: Privacy Policy
+title: Política de Privacidade
 include_in_header: false
+lang: pt
+translation_key: privacypolicy
 ---
 
-**Last updated**  
-September 16 2024
-
-# Privacy Policy
-
-<br>
+**Última atualização**  
+16 de setembro de 2024
 
 # Política de Privacidade
 

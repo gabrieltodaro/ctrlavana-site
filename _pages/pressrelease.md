@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Press Kit
+title: Kit de Imprensa
 include_in_header: false
+lang: pt
+translation_key: pressrelease
 ---
 
-**Last updated**  
-September 16 2024
+**Última atualização**  
+16 de setembro de 2024
 
-# Press Kit
+# Kit de Imprensa
 
 ### Ctrlavana para iPhone
 **Sistema Operacional:** iOS 16.0 ou superior
