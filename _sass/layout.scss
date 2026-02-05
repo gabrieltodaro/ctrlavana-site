@@ -43,7 +43,7 @@
 	grid-column-gap: 30px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
-		"p p p p p i i i i i i i"
+		"i i i i i p p p p p p p"
 		"c c c c c c c c c c c c"
 		"s s s s s s s s s s s s"
 		"f f f f f f f f f f f f";
@@ -289,6 +289,13 @@ nav > ul li a:active {
 	align-content: flex-start;
 }
 
+.iphonePreview {
+	grid-area: p;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 68px;
+}
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
@@ -427,7 +434,7 @@ nav > ul li a:active {
 
 .heroScreenshot {
 	width: 100%;
-	max-width: 430px;
+	max-width: 366px;
 	height: auto;
 	filter: $drop-shadow;
 }
@@ -452,15 +459,62 @@ nav > ul li a:active {
 
 // Feature List
 
-.features {
+.featuresCard {
 	grid-area: c;
+	position: relative;
+	padding: 90px 0 80px;
+}
+
+.featuresCard::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 32px);
+	max-width: calc(100vw - 32px);
+	bottom: 0;
+	background:
+		linear-gradient(
+		rgba($image-overlay-color, $image-overlay-transparency),
+		rgba($image-overlay-color, $image-overlay-transparency)
+		   ),
+		url($header-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	border-radius: 40px;
+	box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+	z-index: 0;
+}
+
+.featuresCard::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 32px);
+	max-width: calc(100vw - 32px);
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.35);
+	border-radius: 40px;
+	z-index: 0;
+}
+
+.featuresCard > * {
+	position: relative;
+	z-index: 1;
+}
+
+.features {
 	display: flex;
 	flex: 0 1 auto;
 	align-content: flex-start;
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	margin-top: 93px;
+	margin-top: 0;
 }
 
 .feature {
@@ -504,11 +558,11 @@ nav > ul li a:active {
 }
 
 .featureText > h3 {
-	color: $feature-title-color;
+	color: #fff;
 }
 
 .featureText > p {
-	color: $feature-text-color;
+	color: rgba(255, 255, 255, 0.8);
 	margin-top: 8px;
 	line-height: 1.5;
 }
@@ -545,7 +599,7 @@ nav > ul li a:active {
 	.feature:nth-child(3n+1) {
 		padding-left: 15px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -582,6 +636,24 @@ nav > ul li a:active {
 	}
 	
 } 
+
+@media only screen and (max-width: 768px) {
+	.featuresCard {
+		padding: 70px 0 60px;
+	}
+
+	.featuresCard::before {
+		width: calc(100vw - 28px);
+		max-width: calc(100vw - 28px);
+		border-radius: 32px;
+	}
+
+	.featuresCard::after {
+		width: calc(100vw - 28px);
+		max-width: calc(100vw - 28px);
+		border-radius: 32px;
+	}
+}
 
 
 

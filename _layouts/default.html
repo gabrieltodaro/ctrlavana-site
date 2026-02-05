@@ -48,7 +48,9 @@
                             <a class="appStoreLink" href="{{ site.appstore_link }}"><img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}"></a>
                         </div>
                     </div>
-                    {% include features.html lang=lang t=t %}
+                    <section class="featuresCard">
+                        {% include features.html lang=lang t=t %}
+                    </section>
                     {% include footer.html lang=lang t=t %}
                     {% include appstoreimages.html %}
                 </div>
