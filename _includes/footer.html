@@ -3,11 +3,15 @@
 {% assign made_by = t.strings.made_by | default: "Made by" %}
 {% assign in_word = t.strings.in | default: "in" %}
 {% assign press_kit_label = t.strings.press_kit | default: "Press Kit" %}
+{% assign app_images_disclaimer = t.strings.app_images_disclaimer %}
 {% assign footer_pages = site.pages | where: "lang", current_lang %}
 
 <footer>
 	{% if site.your_name %}
 	<p class="footerText">{{ made_by }} {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} {{ in_word }} {{ site.your_city }}{% endif %}</p>
+	{% endif %}
+	{% if app_images_disclaimer %}
+	<p class="footerDisclaimer">{{ app_images_disclaimer }}</p>
 	{% endif %}
 	<div class="footerIcons">
 
