@@ -1,0 +1,48 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+{% assign cta = t.cta %}
+
+<section class="ctaSection" id="cta">
+  <div class="landingContainer">
+    <div class="ctaCard">
+      <div class="ctaInner">
+        <div class="ctaCopy ctaAnimate ctaAnimate--up">
+          <h2 class="ctaTitle">{{ cta.title }}</h2>
+          <p class="ctaText">{{ cta.text }}</p>
+          <div class="ctaButtons">
+            <a class="appStoreLink" href="{{ site.appstore_link }}">
+              <img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="{{ cta.button }}">
+            </a>
+          </div>
+        </div>
+        <div class="ctaMedia ctaAnimate ctaAnimate--scale">
+          <img src="{{ 'assets/screenshot/caravan-list.png' | relative_url }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) {
+      document.querySelectorAll(".ctaAnimate").forEach(function(el) {
+        el.classList.add("ctaInView");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("ctaInView");
+        }
+      });
+    }, { threshold: 0.25 });
+
+    document.querySelectorAll(".ctaAnimate").forEach(function(el) {
+      observer.observe(el);
+    });
+  })();
+</script>

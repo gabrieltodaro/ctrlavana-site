@@ -1,0 +1,56 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+{% assign use_cases = t.use_cases %}
+
+<section class="useCases" id="features">
+  <div class="landingContainer">
+    <div class="useCasesHeader animateIn">
+      <h2 class="useCasesTitle">{{ use_cases.title }}</h2>
+      <p class="useCasesSubtitle">{{ use_cases.subtitle }}</p>
+    </div>
+    <div class="useCasesGrid">
+      {% for item in use_cases.items %}
+      <article class="useCaseCard animateIn">
+        <div class="useCaseImage">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}">
+        </div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) {
+      document.querySelectorAll(".useCases .animateIn").forEach(function(el) {
+        el.classList.add("isInView");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        var target = entry.target;
+        if (target.classList.contains("useCasesGrid")) {
+          var cards = target.querySelectorAll(".useCaseCard");
+          cards.forEach(function(card, index) {
+            card.style.transitionDelay = (index * 70) + "ms";
+            card.classList.add("isInView");
+          });
+        } else {
+          target.classList.add("isInView");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    var header = document.querySelector(".useCasesHeader");
+    if (header) observer.observe(header);
+    var grid = document.querySelector(".useCasesGrid");
+    if (grid) observer.observe(grid);
+  })();
+</script>

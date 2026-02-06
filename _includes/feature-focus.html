@@ -1,0 +1,42 @@
+{% assign lang = include.lang | default: page.lang | default: site.default_lang %}
+{% assign t = include.t | default: site.data.i18n[lang] %}
+{% assign features = t.features | default: site.features %}
+{% assign feature_videos = "assets/videos/1-caravan-detail.mp4,assets/videos/2-caravan-add-passenger.mp4,assets/videos/3-passenger-send-message.mp4,assets/videos/4-caravan-add-location.mp4,assets/videos/5-all-data.mp4" | split: "," %}
+
+<section class="featureFocus" data-features-video>
+  <div class="landingContainer">
+    <div class="featureFocusCard">
+      <div class="featureFocusGrid">
+      <div class="featureFocusMedia">
+        <div class="featureFocusVideo">
+          <video class="featureFocusPlayer" muted playsinline autoplay preload="metadata" aria-label="Feature preview">
+            <source src="{{ feature_videos[0] | relative_url }}" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="featureFocusContent">
+        <h2 class="featureFocusTitle">{{ t.features_section.title }}</h2>
+        <p class="featureFocusSubtitle">{{ t.features_section.subtitle }}</p>
+        <div class="featureFocusList">
+          {% for feature in features %}
+            {% assign video_src = feature_videos[forloop.index0] %}
+            {% if feature.title %}
+            <button class="featureFocusItem{% if forloop.first %} isActive{% endif %}" type="button" data-video="{{ video_src | relative_url }}" data-title="{{ feature.title | escape }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+              <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+              </span>
+              <div>
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+              </div>
+            </button>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'assets/js/features-video.js' | relative_url }}"></script>
