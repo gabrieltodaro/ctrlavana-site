@@ -7,50 +7,158 @@ translation_key: support
 ---
 
 # Suporte
-Encontre as informações que você precisa para a melhor utilização do seu aplicativo aqui.
+
+## Começando
+
+Para começar a usar o Ctrlavana:
+
+1. Crie uma caravana
+2. Adicione passageiros
+3. Defina origem e destino
+4. Utilize o check-in durante a viagem
+
+O Ctrlavana funciona offline, então suas caravanas e listas de passageiros continuam acessíveis mesmo sem internet.
 
 <br>
 
-## Perguntas Frequentes
+## Como criar uma caravana
 
-### Como adicionar uma localização a uma Caravana?
+1. Abra o app **Ctrlavana**. A tela inicial mostra a lista de caravanas.  
+   Se você já tiver caravanas criadas, toque no botão **"+"** no topo da tela.  
+   Caso ainda não tenha nenhuma, você pode usar tanto o botão **"+"** no topo quanto o botão **"Adicionar Caravana"** no centro da tela.
 
-Para adicionar um passageiro a sua Caravana, siga os passos abaixo:
+2. Preencha os dados da caravana.  
+   Os campos obrigatórios são:
+   - **Nome**
+   - **Data de início**
+   - **Data de término**
+   - **Saída**
+   - **Destino**
 
-1. Na adição de uma nova Caravana, clique no botão "De:", caso esteja adicionando de onde sairá a Caravana, ou "Para:", caso esteja adicionando o destino final.
-2. A lista de localidades adicionadas aparecerá. Caso deseje usar uma dessas, aperte o botão "Selecionar". Caso queira utilizar uma nova, aperte o botão "+", no topo da tela.
-3. Uma nova tela abrirá, contendo informações para o preenchimento da nova localidade. Você não precisa preencher o nome, mas caso preencha, ele aparecerá na lista de localidades salvas. Preencha o CEP e faça a busca e, se bem sucedido, o sistema preencherá as informações necessárias. Adicione a numeração e o complemento, se necessário, e salve.
-4. O sistema irá preencher a cidade do local adicionado
+3. Toque em **Salvar** para criar a caravana.  
+   Após salvar, ela aparecerá na tela principal da lista de caravanas.
 
-<br>
-
-### Como adicionar um passageiro a uma Caravana?
-
-Para adicionar um passageiro a sua Caravana, siga os passos abaixo:
-
-1. Abra a Caravana desejada;
-2. Na seção “Passageiros”, clique no botão “+”;
-3. A lista de todos os passageiros cadastrados em seu aplicativo será exibida. Selecione o passageiro desejado;
-4. Um botão de ônibus com um símbolo de adição aparecerá. Toque nele.
-
-Após esses passos, o passageiro estará vinculado a sua Caravana e será exibido na lista de passageiros.
-
-Para remover um passageiro de sua Caravana, faça os mesmos passos acima. O botão de adicionar a Caravana será substituído pelo de remover da Caravana.
+Observação:  
+Os passageiros são adicionados dentro da tela **Detalhes da Caravana**, após a criação.
 
 <br>
 
-### Como sincronizar uma Caravana com o calendário?
+## Adicionar passageiros
 
-Para adicionar uma Caravana ao seu calendário, abra a Caravana desejada e abra o menu de opções. A opção de adicionar a Caravana ao seu calendário estará disponível.
+Para adicionar passageiros a uma caravana, primeiro é necessário criar o passageiro no aplicativo.
+
+### Criando um passageiro
+
+1. Abra a aba **Passageiros** na **TabBar**.
+2. Se você já tiver passageiros cadastrados, toque no botão **"+"** no topo da tela.  
+   Caso ainda não tenha nenhum passageiro, você pode usar tanto o botão **"+"** quanto o botão **"Adicionar Passageiro"** no centro da tela.
+3. Escolha como deseja adicionar o passageiro:
+   - Criar um passageiro manualmente
+   - Importar um contato da sua lista de contatos
+4. Preencha as informações obrigatórias:
+   - **Nome**
+   - **Email**
+   - **Telefone**
+   - **Documento de identificação**
+
+Após salvar, o passageiro ficará disponível no app.
+
+### Adicionando o passageiro à caravana
+
+1. Abra a **Caravana** desejada.
+2. Vá até a seção **Passageiros**.
+3. Toque no botão **"+"**.
+4. Selecione o passageiro desejado.
+5. Abra os **detalhes do passageiro**.
+6. Toque no botão **ícone de ônibus com "+"**.
+
+O passageiro será adicionado à caravana.
 
 <br>
 
-### Como adicionar um valor recebido em uma Caravana?
+## Check-in
 
-Para adicionar um valor recebido em uma Caravana, abra o menu da Caravana e toque em "editar". Dentro da tela de edição, role até a parte de pagamentos e valores e adicione ou subtraia o valor necessário.
+- Abra a lista de passageiros da caravana no momento do embarque
+- Marque cada passageiro conforme o check-in for realizado
+- Use a lista para confirmar presença e faltas
 
 <br>
 
-## Contato adicional para Suporte
+## Sorteio
 
-Caso tenha dúvidas ou encontre problemas ao utilizar o Controlavana, entre em contato pelo e-mail [gabz@gapps.tech](mailto:gabz@gapps.tech).
+- Abra a caravana e acesse a ferramenta de sorteio
+- Realize o sorteio aleatório entre os passageiros no app
+- Salve ou compartilhe o resultado conforme o processo do seu grupo
+
+<br>
+
+## Offline e sincronização
+
+- O Ctrlavana funciona offline para gestão de caravanas e passageiros
+- Os dados permanecem disponíveis localmente sem internet
+- Se o iCloud estiver ativo, os dados sincronizam quando a conexão retorna
+- Em múltiplos dispositivos, use o mesmo Apple ID e mantenha o iCloud habilitado
+
+<br>
+
+## Ctrlavana Pro
+
+O Ctrlavana oferece uma assinatura opcional Pro.
+
+Recursos do Pro incluem:
+- Caravanas ativas ilimitadas
+- Exportação da lista de passageiros em PDF
+
+Pode haver um teste gratuito de 7 dias, dependendo da oferta atual da App Store.
+
+A assinatura pode ser gerenciada nas configurações do seu Apple ID.
+
+<br>
+
+## Assinaturas e cobrança (FAQ)
+
+### Assinatura ativa, mas recursos Pro bloqueados
+- Abra a tela de gerenciamento da assinatura
+- Toque em "Restaurar compras"
+- Feche e abra o app novamente, se necessário
+
+### Como gerenciar ou cancelar a assinatura?
+- Abra as configurações de assinatura do seu Apple ID
+- Selecione o Ctrlavana
+- Altere, cancele ou confira o status do plano por lá
+
+### Troquei de dispositivo. Preciso pagar de novo?
+- Use o mesmo Apple ID da compra original
+- Restaure compras no Ctrlavana se o Pro não desbloquear automaticamente
+
+<br>
+
+## Solução de problemas
+
+### Caravanas ou passageiros não aparecem
+
+- Confirme que você está visualizando a caravana correta
+- Se usa mais de um dispositivo, verifique se o iCloud está ativado
+
+### Problemas de sincronização
+
+- O Ctrlavana funciona offline
+- Os dados permanecem disponíveis localmente
+- Aguarde alguns instantes para a sincronização do iCloud
+- Mantenha o iCloud habilitado para o Ctrlavana nas configurações do iOS
+
+<br>
+
+## Contato
+
+Para suporte ou para reportar um bug:
+
+Email: [gabz@gapps.tech](mailto:gabz@gapps.tech)
+
+Ao reportar um bug, inclua:
+- Versão do app
+- Versão do iOS
+- Modelo do dispositivo
+- Passos para reproduzir
+- Resultado esperado vs resultado atual
+- Capturas de tela (ou gravação de tela, se possível)

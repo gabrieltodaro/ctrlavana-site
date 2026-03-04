@@ -7,7 +7,6 @@ pt:
     in: "em"
     press_kit: "Kit de Imprensa"
     language: "Idioma"
-    app_images_disclaimer: "* Imagens do app referentes à versão 2.0, ainda não disponível."
   use_cases:
     title: "Feito para todo tipo de organizador"
     subtitle: "Não importa o grupo, o destino ou o motivo — a Ctrlavana mantém planejamento, passageiros e comunicação em um só lugar."
@@ -40,7 +39,7 @@ pt:
     title: "Funcionalidades"
     subtitle: "Tudo o que você precisa para organizar excursões com clareza, controle e confiança."
   cta:
-    title: "Organize excursões com clareza e total controle*"
+    title: "Organize excursões com clareza e total controle"
     text: "O Ctrlavana ajuda organizadores a gerenciar passageiros, horários e comunicação em um só lugar — sem planilhas, sem confusão, sem dor de cabeça."
     button: "Baixar na App Store"
 
@@ -55,7 +54,6 @@ en:
     in: "in"
     press_kit: "Press Kit"
     language: "Language"
-    app_images_disclaimer: "* App images are from version 2.0, not available yet."
   features:
     - title: "Manage your caravan"
       description: "No internet? No problem. Access all your data anytime without relying on a connection."
@@ -104,6 +102,6 @@ en:
     title: "Features"
     subtitle: "Everything you need to manage group trips with clarity, control, and confidence."
   cta:
-    title: "Organize every group trip with clarity and confidence*"
+    title: "Organize every group trip with clarity and confidence"
     text: "Ctrlavana helps organizers manage passengers, schedules, and communication in one place — no spreadsheets, no confusion, no stress."
     button: "Download on the App Store"
