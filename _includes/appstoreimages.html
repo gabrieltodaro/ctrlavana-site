@@ -6,7 +6,17 @@
 
 $(function() {
 
-    var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&country={{ site.ios_app_country }}&callback=?";
+    function getLookupCountry() {
+        var locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || "";
+        var regionMatch = locale.match(/(?:-|_)([A-Za-z]{2})(?:$|-|_)/);
+        if (regionMatch && regionMatch[1]) {
+            return regionMatch[1].toLowerCase();
+        }
+
+        return "{{ site.ios_app_country | default: 'us' }}".toLowerCase();
+    }
+
+    var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&country=" + encodeURIComponent(getLookupCountry()) + "&callback=?";
 
     $.getJSON(apiURL, function(json) {
 
